@@ -1,0 +1,233 @@
+* {
+    border-radius: inherit;
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+    color: inherit;
+    background: inherit;
+    font-size: inherit;
+    text-align: center;
+}
+
+body {
+    border-radius: .2em;
+    color: #B23935;
+    font-size: 1.4em;
+    background: #7EFFAA url(../resources/backgroundImage.png);
+}
+
+main{
+    width: 80%;
+    margin: 0 auto;
+    background: #98FFBB url(../resources/secondaryBackgroundImage.png);
+    
+}
+
+header {
+    background: #98FFBB url(../resources/secondaryBackgroundImage.png);
+    width: 17em;
+    margin: 0px auto;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: .4em;
+}
+
+.photo-id {
+    
+    width: 11em;
+}
+.photo-of-me {
+    width: 50%;
+    margin: 0 auto;
+}
+#photo-description{
+    font-size: .8em;
+    margin: 1em auto;
+    width: 59%;
+}
+#about-me {
+    font-size: 1.2em;
+    margin: 1em auto;
+}
+
+main > article {
+    margin: 1.7em 0;
+    padding: 1em;
+}
+
+#photo-block{
+    margin: 1em auto;
+    background: #45B26A url(../resources/complementaryBackground.png);
+    padding: 1em 0;
+}
+
+
+
+.text-block {
+    background: #45B26A url(../resources/complementaryBackground.png);
+    width: 29.7%;
+    height: 50em;
+    font-size: .8em;
+    padding: .4em;
+    margin: .5em .1em;
+    float: left;
+}
+
+.important-img{
+    
+    width: 5em;
+    float: left;
+    
+}
+
+.table-good {
+    font-size: 1em;
+    background: #45B26A url(../resources/complementaryBackground.png);
+    padding: 1em 0;
+}
+
+.table-good table {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.table-good h2{
+    margin: 1em;
+}
+
+.table-good td, .table-good th{
+    padding: .5em .4em;
+    font-size: .79em;
+    border: dotted #98FFBB;
+
+}
+
+.flat-list {
+    clear: both;
+}
+
+.flat-list > ul {
+    width: 20em;
+    margin: 1em auto;
+}
+
+.flat-list > ol {
+    width: 20em;
+    margin: 1em auto;
+}
+
+.flat-list > ul li {
+    display: list-item;
+    list-style: none;
+    
+    margin: 1.3em 0;
+}
+.flat-list > ol li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 .4em;
+}
+a:hover {
+ color: #FF827E;
+   
+}
+.flat-list > ul a:hover {
+    background: #45B26A url(../resources/complementaryBackground.png);
+}
+
+.important-link {
+    clear: both;
+    margin: 1em 0;
+    padding: 1em;
+    font-size: 1.3em;
+    background: #45B26A url(../resources/complementaryBackground.png);
+}
+
+footer {
+    clear: both;
+    padding: 1em;
+}
+
+header > nav > ul {
+    font-size: .7em;
+    background: inherit;
+
+}
+
+header > nav > ul > li {
+    list-style: none;
+    margin: .2em .5em;
+    display: inline-block;
+    font-size: 1.09em;
+}
+
+header > nav > ul > li:hover {
+    background: #45B26A url(../resources/complementaryBackground.png);
+}
+
+.flat-list ul a:hover {
+    
+    
+    background: #7EFFAA url(../resources/backgroundImage.png);
+}
+
+.flat-list {
+
+    margin: 1.9em 0 0;
+    background: #45B26A url(../resources/complementaryBackground.png);
+    padding: 1.5em 0 1.5em 0;
+
+}
+
+header > nav > ul > li > a {
+    text-decoration: none;
+}
+
+footer {
+    
+    background: inherit;
+}
+
+.heading {
+    font-size: 1.2em;
+}
+
+.beauty-list ol li{
+    
+    display: inline-block;
+    font-size: 1em;
+    margin: 0 .9em; 
+}
+
+.beauty-list ol {
+    margin: 1.4em 0;
+}
+
+.beauty-list li:hover {
+    background: #7EFFAA url(../resources/backgroundImage.png);
+}
+
+.alt {
+    background: #45B26A url(../resources/complementaryBackground.png);
+    width: auto;
+    height: auto;
+    font-size: .8em;
+    padding: 1em;
+    margin: 1em auto;
+    float: none;
+    
+}
+
+h2.alt {
+    font-size: 1em;
+}

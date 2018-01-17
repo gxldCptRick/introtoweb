@@ -1,0 +1,62 @@
+div {
+
+    border-radius: 1010px;
+}
+
+*{
+    border-radius: 900px;
+}
+
+.prettyDiv {
+    font-size: 55px;
+    font-family: fantasy;
+    border: dashed #449966 10px;
+    padding: 10px;
+    margin: 30px;
+    text-align: center;
+    background-color: #00ffff;
+}
+
+.prettyHeading {
+
+    color: #ffaa33;
+    font-size: 3em;
+    text-align: justify;
+
+}
+
+nav {
+    background-color: #4455ff;
+    width: 59%;
+}
+
+a {
+    color: #3334ff;
+    font-size: 1.9em;
+    margin-left: 10px;
+    margin-right: 65px;
+
+
+
+}
+
+a:visited {
+
+    color: red;
+}
+
+a:hover {
+    color: #00FF00;
+
+}
+
+.container {
+
+    background-color: red;
+    padding: 10px;
+
+}
+
+h1 {
+    color: aqua;
+}

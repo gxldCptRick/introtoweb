@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <header>
+        </header>
+        <main>
+            <article>
+                <h1 id = "header">JS DEMO</h1>
+            </article>
+        </main>
+        <footer>
+        </footer>
+        <script type = "text/javascript">
+            alert(["Hello", "Their", "Batman"].toString())
+            var Person = function(firstName, lastName, age){
+                this.firstName = firstName;
+                this.lastName = lastName;
+                this.age = age;
+                this.toString = function(){
+                    return this.firstName + " " +  this.lastName + " " + this.age;
+                }
+            }
+            var myPerson = new Person("Nancy","Drew", 12);
+            
+            alert(myPerson);
+            
+            console.log("The grand hero " + myPerson.firstName);
+            console.log("Has Went to try to slay the dragon.");
+            console.log("She left to do a whole lot more but things went south and then she died");
+            console.log("Her grave read " + myPerson.toString() + " rest in peace.");
+            
+        </script>
+    </body>
+</html>
