@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body id = "body">
+        <h1 id = "my-h1">Js Demo 2</h1>
+        <div id = "my-div">
+            <span id = "my-span">My Span</span>
+            <button id = "color-button">
+                Cycle Color
+            </button>
+            <button id = "set-button">
+                set h1 color
+            </button>
+            <input type = "text" id = "color-text"/>
+        </div>
+        
+        
+        <div style ="background: red; display: inline-block; height: 1em; width: 1em; border: solid black;" id = "box">
+        </div>
+        <br/>
+        <button id = "big-button">Size Bigger</button>
+        <button id="small-button">Size Smaller</button>
+        <button id = "revert-box">
+            revert
+        </button>
+    </body>
+    <script type = "text/javascript">
+        
+        
+        
+        var reverButton = document.getElementById("revert-box");
+        var bigButton = document.getElementById("big-button");
+        var size = 1;
+        var smallButton = document.getElementById("small-button");
+       var colors = ["#ff0000", "#FFA500", "#00ff00", "#fff000", "#0000ff","#551A8B","#800000","	#7CB9E8", "	#3B7A57", "#ffffff", "#000000", "#9900ff", "#ff00ff" , "#00ffff"];
+        var counter = 0;
+        var turned = false;
+        var colorButton = document.getElementById("color-button");
+        var header = document.getElementById("my-h1");
+        
+        var setColorButton = document.getElementById("set-button");
+        
+         function resizeBox(size) {
+            var box = document.getElementById("box");
+            box.style.height = size;
+            box.style.width = size;
+             
+            box.style.backgroundColor = getColor();
+             
+             console.log(box.style.backgroundColor);
+        }
+        
+        bigButton.onclick = function(){
+            var newSize = (++size) + "em";
+            resizeBox(newSize);
+            
+        }
+        
+        smallButton.onclick = function(){
+            var newSize = (--size) + "em";
+            resizeBox(newSize);
+        }
+        
+        reverButton.onclick = function() {
+            size = 1;
+            resizeBox("1em");
+        }
+        
+        function decideSize(){
+            return Math.round(Math.random() * 100) + "em";
+        }
+        
+        function loopResize(){
+            turned = size > 50 && !turned;
+                    
+            resizeBox(decideSize());
+        }
+        
+        setInterval(loopResize, 1);
+        
+        function  rainbowHeader(){
+            
+            header.style.color = getColor();
+            
+        }
+        
+        function rainBackGround() {
+            var body = document.getElementById("body");
+            body.style.backgroundColor = getColor();
+        }
+        
+        setInterval(rainbowHeader, 1);
+        
+        setInterval(rainBackGround, 1);
+        
+        setColorButton.onclick = function(){
+            var text = document.getElementById("color-text").value;
+            document.getElementById("color-text").value = "";
+            header.style.color = text;
+            
+            
+        } 
+        
+        function getColor(){
+            
+            if(counter >= colors.length){
+                
+                counter = 0;
+            }
+            console.log(colors[counter]);
+            return colors[counter++];
+        }
+        
+        console.log(getColor);
+        
+        
+        colorButton.onclick = function() {
+            console.log("click");
+            header.style.color = getColor();
+            counter++;
+        };
+        
+        
+                
+    </script>
+</html>
